@@ -1,0 +1,12 @@
+.header{
+    background-image: url(./dekstop_img/header_img.jpeg);
+    position: relative;
+}
+.header-star{
+    position: absolute;
+}
+.header-down{
+    background-color: rgb(188, 236, 48);
+    display: flex;
+    
+}
