@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+  body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+.header{
+    background-image: url(./dekstop_img/header_img.jpeg);
+    position: relative;
+    &__star{
+        position: absolute;
+    }
+    &__tittle{
+
+    }
+    &__text{
+    
+    }
+    &__btn{
+    
+    }
+}
+
+.header-down{
+    background-color: rgb(188, 236, 48);
+    display: flex;
+    &__text{
+
+    }
+    &__img{
+    
+    }
+}
+
+.main{
+    &__info{
+
+    }
+    &__tittle{
+    
+    }
+    &__text{
+    
+    }
+}
+
+.games{
+    &__block{
+
+    }
+}
+
+.container{
+    &__block{
+
+    }
+}
+
+.footer{
+    &__text{
+
+    }
+}

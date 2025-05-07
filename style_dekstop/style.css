@@ -1,63 +1,31 @@
-.header{
-    background-image: url(./dekstop_img/header_img.jpeg);
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
 }
-.header-star{
-    position: absolute;
-}
-.header-down{
-    background-color: rgb(188, 236, 48);
-    display: flex;
 
+a {
+  text-decoration: none;
 }
-.header__tittle{
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
-.header__text{
 
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
-.header__btn{
 
+.header {
+  background-image: url(./dekstop_img/header_img.jpeg);
+  position: relative;
 }
-.header__star{
-
+.header__star {
+  position: absolute;
 }
-.header-down{
-
-}
-.header-down__text{
-
-}
-.header-down__img{
-
-}
-.main{
-
-}
-.main__info{
-
-}
-.main__tittle{
-
-}
-.main__text{
-
-}
-.games{
-
-}
-.games__block{
-
-}
-.container{
-
-}
-.container__block{
-
-}
-.footer{
-
-}
-.footer__text{
-    
-}
+.header-down {
+  background-color: rgb(188, 236, 48);
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
