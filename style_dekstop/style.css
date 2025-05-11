@@ -20,12 +20,65 @@ body {
 
 .header {
   background-image: url(./dekstop_img/header_img.jpeg);
-  position: relative;
+  padding-left: 120px;
+  padding-right: 120px;
+  height: 800px;
 }
 .header__star {
-  position: absolute;
+  padding-left: 156px;
+  padding-top: 69px;
 }
+.header__tittle {
+  padding-top: 45px;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(32, 32, 39);
+}
+.header__text {
+  padding-top: 24px;
+  max-width: 690px;
+  padding-bottom: 48px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+.header__btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  width: 247px;
+  height: 66px;
+}
+.header__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .header-down {
+  padding-left: 120px;
+  padding-right: 120px;
   background-color: rgb(188, 236, 48);
   display: flex;
+}
+.main {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.footer {
+  padding-left: 120px;
+  padding-right: 120px;
 }/*# sourceMappingURL=style.css.map */
