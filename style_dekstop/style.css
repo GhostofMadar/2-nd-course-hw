@@ -52,6 +52,10 @@ body {
   width: 247px;
   height: 66px;
 }
+.header__btn:hover {
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
 .header__link {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -63,17 +67,116 @@ body {
   flex-direction: row;
   justify-content: center;
 }
+.header__link:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
 
 .header-down {
   padding-left: 120px;
   padding-right: 120px;
+  height: 90px;
   background-color: rgb(188, 236, 48);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 51px;
+}
+.header-down__text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
 }
 .main {
+  background-color: rgb(32, 32, 39);
   padding-left: 120px;
   padding-right: 120px;
 }
+.main__tittle {
+  padding-top: 94px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.main__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  max-width: 788px;
+}
+
+.games {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 122px;
+  grid-auto-rows: min-content;
+}
+.games__block {
+  border-radius: 30px;
+  border: transparent;
+  grid-column: span 4;
+  background-color: rgb(255, 255, 255);
+}
+.games__block_lrg {
+  height: 512px;
+}
+.games__block_sml {
+  height: 473px;
+}
+.games__background {
+  height: 314px;
+  border-radius: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(173, 97, 255);
+}
+.games__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.games__img-sml {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.games__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 32px 32px 36px 32px;
+}
+.games__number {
+  color: rgb(32, 32, 39);
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px 10px 16px;
+  flex-direction: row;
+}
+.games__name {
+  color: rgb(32, 32, 39);
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .container {
   padding-left: 120px;
   padding-right: 120px;
