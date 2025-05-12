@@ -16,6 +16,7 @@
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    background: rgb(32, 32, 39);
   }
 
 
@@ -31,7 +32,7 @@
   &__star-green{
     
   }
-  &__tittle{
+  &__title{
     padding-top: 45px;
     font-size: 64px;
     font-weight: 700;
@@ -88,7 +89,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 51px;
+  column-gap: 51px;
     &__text{
       color: rgb(32, 32, 39);
       font-size: 30px;
@@ -100,13 +101,13 @@
 }
 
 .main{
-  background-color: rgb(32, 32, 39);
+
   padding-left: 120px;
   padding-right: 120px;
   &__info{
 
   }
-  &__tittle{
+  &__title{
     padding-top: 94px;
     color: rgb(255, 255, 255);
     font-size: 64px;
@@ -123,15 +124,19 @@
 }
 
 .games{
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
+
   padding-top: 122px;
-  grid-auto-rows: min-content;
+  display: flex;
+  gap: 32px;
+  &__container{
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
   &__block{
     border-radius: 30px;
     border: transparent;
-    grid-column: span 4;
     background-color: rgb(255, 255, 255);
     &_lrg{
       height: 512px;
@@ -146,7 +151,24 @@
     border: 1px solid rgb(255, 255, 255);
     overflow: hidden;
     position: relative;
-    background-color: rgb(173, 97, 255);
+    &_one{
+      background-color: rgb(173, 97, 255);
+    }
+    &_two{
+      background-color: rgb(253, 173, 0);
+    }
+    &_three{
+      background-color: rgb(86, 94, 239);
+    }
+    &_four{
+      background-color: rgb(39, 26, 88);
+    }
+    &_five{
+      background-color: rgb(153, 209, 0);
+    }
+    &_six{
+      background-color: rgb(39, 26, 88);
+    }
   }
   &__img{
     position: absolute;
@@ -159,6 +181,14 @@
   &__img-sml{
     position: absolute;
     top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+  }
+  &__img-emo{
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
@@ -192,9 +222,100 @@
 .container{
   padding-left: 120px;
   padding-right: 120px;
-    &__block{
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  &__title{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &__box{
 
+  }
+  &__block{
+    border-radius: 30px;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    &_lrg{
+      height: 512px;
     }
+    &_sml{
+      height: 473px;
+    }
+  }
+  &__background{
+    height: 314px;
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    &_one{
+      background-color: rgb(173, 97, 255);
+    }
+    &_two{
+      background-color: rgb(253, 173, 0);
+    }
+    &_three{
+      background-color: rgb(86, 94, 239);
+    }
+    &_four{
+      background-color: rgb(39, 26, 88);
+    }
+    &_five{
+      background-color: rgb(153, 209, 0);
+    }
+    &_six{
+      background-color: rgb(39, 26, 88);
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+  }
+  &__img-sml{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+  }
+  &__img-emo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+  }
+  &__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 32px 32px 36px 32px;
+  }
+  &__number{
+    color: rgb(32, 32, 39);
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 16px 10px 16px;
+    flex-direction: row;
+  }
+  &__name{
+    color: rgb(32, 32, 39);
+    font-weight: 700;
+    font-size: 32px;
+  }
 }
 
 .footer{

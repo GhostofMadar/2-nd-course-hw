@@ -16,6 +16,7 @@ body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background: rgb(32, 32, 39);
 }
 
 .header {
@@ -28,7 +29,7 @@ body {
   padding-left: 156px;
   padding-top: 69px;
 }
-.header__tittle {
+.header__title {
   padding-top: 45px;
   font-size: 64px;
   font-weight: 700;
@@ -81,7 +82,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 51px;
+  -moz-column-gap: 51px;
+       column-gap: 51px;
 }
 .header-down__text {
   color: rgb(32, 32, 39);
@@ -89,11 +91,10 @@ body {
   font-weight: 700;
 }
 .main {
-  background-color: rgb(32, 32, 39);
   padding-left: 120px;
   padding-right: 120px;
 }
-.main__tittle {
+.main__title {
   padding-top: 94px;
   color: rgb(255, 255, 255);
   font-size: 64px;
@@ -109,16 +110,19 @@ body {
 }
 
 .games {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
   padding-top: 122px;
-  grid-auto-rows: min-content;
+  display: flex;
+  gap: 32px;
+}
+.games__container {
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .games__block {
   border-radius: 30px;
   border: transparent;
-  grid-column: span 4;
   background-color: rgb(255, 255, 255);
 }
 .games__block_lrg {
@@ -133,7 +137,24 @@ body {
   border: 1px solid rgb(255, 255, 255);
   overflow: hidden;
   position: relative;
+}
+.games__background_one {
   background-color: rgb(173, 97, 255);
+}
+.games__background_two {
+  background-color: rgb(253, 173, 0);
+}
+.games__background_three {
+  background-color: rgb(86, 94, 239);
+}
+.games__background_four {
+  background-color: rgb(39, 26, 88);
+}
+.games__background_five {
+  background-color: rgb(153, 209, 0);
+}
+.games__background_six {
+  background-color: rgb(39, 26, 88);
 }
 .games__img {
   position: absolute;
@@ -147,6 +168,15 @@ body {
 .games__img-sml {
   position: absolute;
   top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.games__img-emo {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
@@ -180,7 +210,102 @@ body {
 .container {
   padding-left: 120px;
   padding-right: 120px;
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
 }
+.container__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+}
+.container__block {
+  border-radius: 30px;
+  border: transparent;
+  background-color: rgb(255, 255, 255);
+}
+.container__block_lrg {
+  height: 512px;
+}
+.container__block_sml {
+  height: 473px;
+}
+.container__background {
+  height: 314px;
+  border-radius: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+}
+.container__background_one {
+  background-color: rgb(173, 97, 255);
+}
+.container__background_two {
+  background-color: rgb(253, 173, 0);
+}
+.container__background_three {
+  background-color: rgb(86, 94, 239);
+}
+.container__background_four {
+  background-color: rgb(39, 26, 88);
+}
+.container__background_five {
+  background-color: rgb(153, 209, 0);
+}
+.container__background_six {
+  background-color: rgb(39, 26, 88);
+}
+.container__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.container__img-sml {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.container__img-emo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.container__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10;
+  padding: 32px 32px 36px 32px;
+}
+.container__number {
+  color: rgb(32, 32, 39);
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px 10px 16px;
+  flex-direction: row;
+}
+.container__name {
+  color: rgb(32, 32, 39);
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .footer {
   padding-left: 120px;
   padding-right: 120px;
