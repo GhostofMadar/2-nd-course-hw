@@ -81,15 +81,15 @@
 }
 
 .header-down{
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 60px;
+  padding-right: 60px;
   height: 90px;
   background-color: rgb(188, 236, 48);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: 51px;
+  column-gap: 21px;
     &__text{
       color: rgb(32, 32, 39);
       font-size: 30px;
@@ -104,6 +104,17 @@
 
   padding-left: 120px;
   padding-right: 120px;
+  position: relative;
+  &__star{
+    position: absolute;
+    overflow: hidden;
+    top: 25%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+
+
+  }
   &__info{
 
   }
@@ -231,25 +242,37 @@
     font-weight: 700;
   }
   &__box{
-
+    display: flex;
+    flex-direction: column;
   }
   &__block{
     border-radius: 30px;
     border: transparent;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px; 
     &_lrg{
-      height: 512px;
+      height: 500px;
     }
     &_sml{
-      height: 473px;
+      height: 500px;
     }
   }
+  &__block-two{
+    border-radius: 30px;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    column-gap: 32px; 
+  }
   &__background{
-    height: 314px;
     border-radius: 30px;
     border: 1px solid rgb(255, 255, 255);
     overflow: hidden;
     position: relative;
+    height: 500px;
+    width: 50%;
     &_one{
       background-color: rgb(173, 97, 255);
     }
@@ -299,29 +322,101 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10;
-    padding: 32px 32px 36px 32px;
-  }
-  &__number{
-    color: rgb(32, 32, 39);
-    font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 8px 16px 10px 16px;
-    flex-direction: row;
   }
   &__name{
-    color: rgb(32, 32, 39);
+    padding-left: 48px;
+    padding-top: 48px;
+    font-size: 48px;
     font-weight: 700;
-    font-size: 32px;
+    color: rgb(32, 32, 39);
+  }
+  &__name-two{
+    padding-top: 48px;
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(32, 32, 39);
+    &_max{
+      max-width: 250px;
+    }
+  }
+  &__text{
+    padding-top: 24px;
+    padding-left: 48px;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(32, 32, 39);
+    padding-bottom: 36px;
+  }
+  &__text-two{
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(32, 32, 39);
+  }
+  &__btn{
+    width: 247px;
+    height: 66px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    margin-left: 48px;
+  }
+  &__btn-two{
+     width: 247px;
+    height: 66px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    margin-top: 36px;
+  }
+  &__btn:hover{
+    cursor: pointer;
+  }
+  &__btn-two:hover{
+    cursor: pointer;
+  }
+  &__link{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  &__link-two{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  &__img-emo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    object-fit: cover;
+    pointer-events: none;
   }
 }
 
 .footer{
   padding-left: 120px;
   padding-right: 120px;
-    &__text{
-
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+  margin-top: 144px;
+  &__text{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 60px;
     }
 }
