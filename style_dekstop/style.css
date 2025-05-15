@@ -24,10 +24,43 @@ body {
   padding-left: 120px;
   padding-right: 120px;
   height: 800px;
+  position: relative;
+  max-width: 1440px;
+  overflow: hidden;
 }
 .header__star {
   padding-left: 156px;
   padding-top: 69px;
+}
+.header__star-big {
+  position: absolute;
+  overflow: hidden;
+  top: -300px;
+  right: -400px;
+}
+.header__star-vector {
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+  left: 700px;
+}
+.header__star-vector1 {
+  overflow: hidden;
+  position: absolute;
+  top: 215px;
+  left: 920px;
+}
+.header__star-vector2 {
+  overflow: hidden;
+  position: absolute;
+  top: 315px;
+  left: 1080px;
+}
+.header__star-vector3 {
+  overflow: hidden;
+  position: absolute;
+  top: 390px;
+  left: 1110px;
 }
 .header__title {
   padding-top: 45px;
@@ -91,6 +124,8 @@ body {
   font-weight: 700;
 }
 .main {
+  max-width: 1440px;
+  overflow: hidden;
   padding-left: 120px;
   padding-right: 120px;
   position: relative;
@@ -103,6 +138,11 @@ body {
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
      object-fit: cover;
+}
+.main__star-mini1 {
+  position: absolute;
+  top: 760px;
+  left: 20px;
 }
 .main__title {
   padding-top: 94px;
@@ -228,6 +268,12 @@ body {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
+  margin-bottom: 72px;
+}
+.container__games {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .container__box {
   display: flex;
