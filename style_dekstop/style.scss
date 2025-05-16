@@ -176,6 +176,7 @@
   padding-top: 122px;
   display: flex;
   gap: 32px;
+  margin-bottom: 96px;
   &__container{
     width: 378px;
     display: flex;
@@ -186,12 +187,18 @@
     border-radius: 30px;
     border: transparent;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 2 px 8px rgba (0,0,0,0,1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     &_lrg{
       height: 512px;
     }
     &_sml{
       height: 473px;
     }
+  }
+  &__block:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba($color: 0,0,0,0,2);
   }
   &__background{
     height: 314px;
@@ -270,7 +277,6 @@
 .container{
   padding-left: 120px;
   padding-right: 120px;
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
   &__title{
@@ -408,7 +414,7 @@
     margin-left: 48px;
   }
   &__btn-two{
-     width: 247px;
+    width: 247px;
     height: 66px;
     flex-direction: row;
     justify-content: center;
@@ -420,9 +426,11 @@
   }
   &__btn:hover{
     cursor: pointer;
+    background: rgb(255, 255, 255);
   }
   &__btn-two:hover{
     cursor: pointer;
+    background: rgb(255, 255, 255);
   }
   &__link{
     text-decoration: none;
@@ -431,12 +439,18 @@
     text-align: center;
     color: rgb(255, 255, 255);
   }
+  &__link:hover{
+    color: rgb(0, 0, 0);
+  }
   &__link-two{
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
     color: rgb(255, 255, 255);
+  }
+  &__link-two:hover{
+    color: rgb(0, 0, 0);
   }
   &__img-emo{
     position: absolute;

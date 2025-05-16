@@ -174,12 +174,18 @@ body {
   border-radius: 30px;
   border: transparent;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 2 px 8px rgba 0, 0, 0, 0, 1;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .games__block_lrg {
   height: 512px;
 }
 .games__block_sml {
   height: 473px;
+}
+.games__block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px black;
 }
 .games__background {
   height: 314px;
@@ -416,9 +422,11 @@ body {
 }
 .container__btn:hover {
   cursor: pointer;
+  background: rgb(255, 255, 255);
 }
 .container__btn-two:hover {
   cursor: pointer;
+  background: rgb(255, 255, 255);
 }
 .container__link {
   text-decoration: none;
@@ -427,12 +435,18 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
 }
+.container__link:hover {
+  color: rgb(0, 0, 0);
+}
 .container__link-two {
   text-decoration: none;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+.container__link-two:hover {
+  color: rgb(0, 0, 0);
 }
 .container__img-emo {
   position: absolute;
