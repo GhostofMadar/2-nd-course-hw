@@ -28,11 +28,40 @@
   &__star-big{
     position: absolute;
     overflow: hidden;
-    top: -300px;
+    top: -350px;
     right: -400px;
   }
+  &__stars{
+
+  }
+  &__star2{
+    position: absolute;
+    overflow: hidden;
+    left: 57px;
+    top: 94px;
+
+  }
+   &__star3{
+    position: absolute;
+    overflow: hidden;
+    left: 156px;
+    top: 69px;
+  }
+   &__star5{
+    position: absolute;
+    overflow: hidden;
+    right: 500px;
+    bottom: 135px;
+  }
+   &__star4{
+    position: absolute;
+    overflow: hidden;
+    right: 370px;
+    bottom: 55px;
+    
+  }
   &__title{
-    padding-top: 45px;
+    padding-top: 196px;
     font-size: 64px;
     font-weight: 700;
     text-align: left;
@@ -56,7 +85,7 @@
     background: rgb(32, 32, 39);
     width: 247px;
     height: 66px;
-    margin-bottom: 100px;
+    margin-bottom: 156px;
   }
   &__btn:hover{
     background: rgb(255, 255, 255);
@@ -91,14 +120,6 @@
     transform: translate(-50%, -50%);
     object-fit: cover;
   }
-  &__star-mini1{
-    position: absolute;
-    top: 760px;
-    left: 20px;
-  }
-  &__info{
-
-  }
   &__title{
     padding-top: 94px;
     color: rgb(255, 255, 255);
@@ -112,6 +133,19 @@
     line-height: 32px;
     color: rgb(255, 255, 255);
     
+  }
+   &__star11{
+    position: absolute;
+    overflow: hidden;
+    left: 22px;
+    top: 770px;
+
+  }
+   &__star12{
+    position: absolute;
+    overflow: hidden;
+    left: 42px;
+    top: 822px;
   }
 }
 
