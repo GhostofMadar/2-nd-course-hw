@@ -21,49 +21,15 @@
 
 
 .header{
+  max-width: max;
   background-image: url(./dekstop_img/header_img.jpeg);
-  padding-left: 120px;
-  padding-right: 120px;
-  height: 800px;
   position: relative;
-  max-width: 1440px;
   overflow: hidden;
-  &__star{
-    padding-left: 156px;
-    padding-top: 69px; 
-  }
   &__star-big{
     position: absolute;
     overflow: hidden;
     top: -300px;
     right: -400px;
-  }
-  &__star-vector{
-    overflow: hidden;
-    position: absolute;
-    top: -30px;
-    left: 700px;
-  }
-  &__star-vector1{
-    overflow: hidden;
-    position: absolute;
-    top: 215px;
-    left: 920px;
-  }
-  &__star-vector2{
-    overflow: hidden;
-    position: absolute;
-    top: 315px;
-    left: 1080px;
-  }
-  &__star-vector3{
-    overflow: hidden;
-    position: absolute;
-    top: 390px;
-    left: 1110px;
-  }
-  &__star-green{
-    
   }
   &__title{
     padding-top: 45px;
@@ -90,6 +56,7 @@
     background: rgb(32, 32, 39);
     width: 247px;
     height: 66px;
+    margin-bottom: 100px;
   }
   &__btn:hover{
     background: rgb(255, 255, 255);
@@ -113,31 +80,8 @@
 
 }
 
-.header-down{
-  padding-left: 60px;
-  padding-right: 60px;
-  height: 90px;
-  background-color: rgb(188, 236, 48);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 21px;
-    &__text{
-      color: rgb(32, 32, 39);
-      font-size: 30px;
-      font-weight: 700;
-    }
-    &__img{
-    
-    }
-}
-
 .main{
-  max-width: 1440px;
   overflow: hidden;
-  padding-left: 120px;
-  padding-right: 120px;
   position: relative;
   &__star{
     position: absolute;
@@ -167,7 +111,7 @@
     font-weight: 400;
     line-height: 32px;
     color: rgb(255, 255, 255);
-    max-width: 788px;
+    
   }
 }
 
@@ -198,7 +142,7 @@
   }
   &__block:hover{
     transform: scale(1.05);
-    box-shadow: 0 4px 16px rgba($color: 0,0,0,0,2);
+    
   }
   &__background{
     height: 314px;
@@ -275,8 +219,6 @@
 }
 
 .container{
-  padding-left: 120px;
-  padding-right: 120px;
   display: flex;
   flex-direction: column;
   &__title{

@@ -20,47 +20,16 @@ body {
 }
 
 .header {
+  max-width: max;
   background-image: url(./dekstop_img/header_img.jpeg);
-  padding-left: 120px;
-  padding-right: 120px;
-  height: 800px;
   position: relative;
-  max-width: 1440px;
   overflow: hidden;
-}
-.header__star {
-  padding-left: 156px;
-  padding-top: 69px;
 }
 .header__star-big {
   position: absolute;
   overflow: hidden;
   top: -300px;
   right: -400px;
-}
-.header__star-vector {
-  overflow: hidden;
-  position: absolute;
-  top: -30px;
-  left: 700px;
-}
-.header__star-vector1 {
-  overflow: hidden;
-  position: absolute;
-  top: 215px;
-  left: 920px;
-}
-.header__star-vector2 {
-  overflow: hidden;
-  position: absolute;
-  top: 315px;
-  left: 1080px;
-}
-.header__star-vector3 {
-  overflow: hidden;
-  position: absolute;
-  top: 390px;
-  left: 1110px;
 }
 .header__title {
   padding-top: 45px;
@@ -85,6 +54,7 @@ body {
   background: rgb(32, 32, 39);
   width: 247px;
   height: 66px;
+  margin-bottom: 100px;
 }
 .header__btn:hover {
   background: rgb(255, 255, 255);
@@ -106,28 +76,8 @@ body {
   cursor: pointer;
 }
 
-.header-down {
-  padding-left: 60px;
-  padding-right: 60px;
-  height: 90px;
-  background-color: rgb(188, 236, 48);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  -moz-column-gap: 21px;
-       column-gap: 21px;
-}
-.header-down__text {
-  color: rgb(32, 32, 39);
-  font-size: 30px;
-  font-weight: 700;
-}
 .main {
-  max-width: 1440px;
   overflow: hidden;
-  padding-left: 120px;
-  padding-right: 120px;
   position: relative;
 }
 .main__star {
@@ -156,13 +106,13 @@ body {
   font-weight: 400;
   line-height: 32px;
   color: rgb(255, 255, 255);
-  max-width: 788px;
 }
 
 .games {
   padding-top: 122px;
   display: flex;
   gap: 32px;
+  margin-bottom: 96px;
 }
 .games__container {
   width: 378px;
@@ -185,7 +135,6 @@ body {
 }
 .games__block:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 16px black;
 }
 .games__background {
   height: 314px;
@@ -264,9 +213,6 @@ body {
 }
 
 .container {
-  padding-left: 120px;
-  padding-right: 120px;
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
 }
