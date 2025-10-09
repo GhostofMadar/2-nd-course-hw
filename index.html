@@ -17,6 +17,7 @@
         <div class="header center">
             <div class="header__star-cont">
                 <img class="header__star-big" src="./style_dekstop/dekstop_img/star_group.svg" alt="header_star">
+                <img class="header__star-mobile" src="./style_mobile/mobile_img/Vector.svg" alt="header_star">
             </div>
             <div class="header__stars">
                 <img class="header__star2" src="./style_dekstop/dekstop_img/Star2.svg" alt="header_star">
@@ -27,7 +28,9 @@
             <h1 class="header__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
             <p class="header__text">Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай «Поехали!»
                 и приступай.</p>
-            <button class="header__btn"><a class="header__link" href="#go">Поехали!</a></button>
+            <div class="header__button">
+                <button class="header__btn"><a class="header__link" href="#go">Поехали!</a></button>
+            </div>
         </div>
 
     </header>
@@ -129,88 +132,173 @@
     <div class="container center">
         <h1 class="container__title">Мини-игры</h1>
         <div class="container__games">
-            <div class="container__box" id="game1">
-                <div class="container__block container__block_sml">
-                    <div class="container__footer">
-                        <p class="container__name">Угадай число</p>
-                        <p class="container__text">Попробуй угадать случайное<br> число от 1 до 100.</p>
-                        <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
+            <div class="container__box-mobile">
+                <div class="container__block-mobile">
+                    <div class="container__background-mobile">
+                        <img class="container__img-mobile" src="./style_mobile/mobile_img/container1.svg"
+                            alt="beckground1">
+                        <img class="container__img-sml-mobile" src="./style_mobile/mobile_img/container1.1.svg"
+                            alt="beckground1.1">
                     </div>
-                    <div class="container__background container__background_one">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_1.svg" alt="background1">
-                        <img class="container__img-sml" src="./style_dekstop/dekstop_img/background1_1.svg"
-                            alt="background1_1">
-                        <img class="container__img-emo" src="./style_dekstop/dekstop_img/container1_1.svg" alt="?">
-                    </div>
-                </div>
-            </div>
-            <div class="container__box" id="game2">
-                <div class="container__block-two container__block_sml">
-                    <div class="container__background container__background_two">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_2.svg" alt="background2">
-                    </div>
-                    <div class="container__footer">
-                        <p class="container__name-two">Простая<br>арифметика</p>
-                        <p class="container__text-two">Попробуй решить простые<br>арифметические задачи.</p>
-                        <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="container__box" id="game3">
-                <div class="container__block container__block_sml">
-                    <div class="container__footer">
-                        <p class="container__name">Переверни текст</p>
-                        <p class="container__text">Попробуй ввести текст, который<br>будет перевернут.</p>
-                        <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
-                    </div>
-                    <div class="container__background container__background_three">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_3.svg" alt="background3">
-                    </div>
-                </div>
-            </div>
-            <div class="container__box" id="game4">
-                <div class="container__block-two container__block_sml">
-                    <div class="container__background container__background_four">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_4.svg" alt="background4">
-                        <img class="games__img-sml" src="./style_dekstop/dekstop_img/container4_1.svg"
-                            alt="background4_1">
-                        <img class="games__img-emo" src="./style_dekstop/dekstop_img/fist_1.png" alt="fist">
-                    </div>
-                    <div class="container__footer">
-                        <p class="container__name-two container__name-two_max">Камень, ножницы, бумага</p>
-                        <p class="container__text-two">Сыграй в популярную игру<br> против компьютера.</p>
-                        <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="container__box" id="game5">
-                <div class="container__block container__block_sml">
-                    <div class="container__footer">
-                        <p class="container__name">Переверни текст</p>
-                        <p class="container__text">Попробуй ввести текст, который<br>будет перевернут.</p>
-                        <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
-                    </div>
-                    <div class="container__background container__background_five">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_5.svg" alt="background5">
-                        <img class="games__img-sml" src="./style_dekstop/dekstop_img/container5_1.svg"
-                            alt="background5_1">
-                    </div>
-                </div>
-            </div>
-            <div class="container__box" id="game6">
-                <div class="container__block-two container__block_sml">
-                    <div class="container__background container__background_six">
-                        <img class="container__img" src="./style_dekstop/dekstop_img/container_6.svg" alt="background6">
-                    </div>
-                    <div class="container__footer">
-                        <p class="container__name-two container__name-two_max">Генератор случайных цветов</p>
-                        <p class="container__text-two">Игра, в которой при клике на кнопку<br> фон страницы меняется на
-                            случайный.</p>
-                        <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
+                    <div class="container__footer-mobile">
+                        <p class="container__name-mobile">Угадай число</p>
+                        <p class="container__text-mobile">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                        <button class="container__btn-mobile"><a class="container__link-mobile"
+                                href="#">Играть!</a></button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container__box" id="game1">
+            <div class="container__block container__block_sml">
+                <div class="container__footer">
+                    <p class="container__name">Угадай число</p>
+                    <p class="container__text">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                    <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
+                </div>
+                <div class="container__background container__background_one">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_1.svg" alt="background1">
+                    <img class="container__img-sml" src="./style_dekstop/dekstop_img/background1_1.svg"
+                        alt="background1_1">
+                    <img class="container__img-emo" src="./style_dekstop/dekstop_img/container1_1.svg" alt="?">
+                </div>
+            </div>
+        </div>
+        <div class="container__box-mobile">
+            <div class="container__block-mobile">
+                <div class="container__background-mobile-big">
+                    <img class="container__img-mobile-big" src="./style_mobile/mobile_img/container2.svg"
+                        alt="beckground2">
+                </div>
+                <div class="container__footer-mobile">
+                    <p class="container__name-mobile">Простая арифметика</p>
+                    <p class="container__text-mobile">Попробуй решить простые<br> арифметические задачи.</p>
+                    <button class="container__btn-mobile"><a class="container__link-mobile"
+                            href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box" id="game2">
+            <div class="container__block-two container__block_sml">
+                <div class="container__background container__background_two">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_2.svg" alt="background2">
+                </div>
+                <div class="container__footer">
+                    <p class="container__name-two">Простая<br>арифметика</p>
+                    <p class="container__text-two">Попробуй решить простые<br>арифметические задачи.</p>
+                    <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box-mobile">
+            <div class="container__block-mobile">
+                <div class="container__background-mobile-big">
+                    <img class="container__img-mobile-big" src="./style_mobile/mobile_img/container3.svg"
+                        alt="beckground3">
+                </div>
+                <div class="container__footer-mobile">
+                    <p class="container__name-mobile">Переверни<br>текст</p>
+                    <p class="container__text-mobile">Попробуй ввести текст, который<br>будет перевернут.</p>
+                    <button class="container__btn-mobile"><a class="container__link-mobile"
+                            href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box" id="game3">
+            <div class="container__block container__block_sml">
+                <div class="container__footer">
+                    <p class="container__name">Переверни текст</p>
+                    <p class="container__text">Попробуй ввести текст, который<br>будет перевернут.</p>
+                    <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
+                </div>
+                <div class="container__background container__background_three">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_3.svg" alt="background3">
+                </div>
+            </div>
+        </div>
+        <div class="container__box-mobile">
+            <div class="container__block-mobile">
+                <div class="container__background-mobile-big">
+                    <img class="container__img-mobile" src="./style_mobile/mobile_img/container4.svg" alt="beckground4">
+                    <img class="container__img-sml-mobile" src="./style_mobile/mobile_img/✊.svg" alt="beckground1.1">
+                </div>
+                <div class="container__footer-mobile">
+                    <p class="container__name-mobile">Камень,<br>ножницы,<br>бумага</p>
+                    <p class="container__text-mobile">Сыграй в популярную игру<br>против компьютера.</p>
+                    <button class="container__btn-mobile"><a class="container__link-mobile"
+                            href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box" id="game4">
+            <div class="container__block-two container__block_sml">
+                <div class="container__background container__background_four">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_4.svg" alt="background4">
+                    <img class="games__img-sml" src="./style_dekstop/dekstop_img/container4_1.svg" alt="background4_1">
+                    <img class="games__img-emo" src="./style_dekstop/dekstop_img/fist_1.png" alt="fist">
+                </div>
+                <div class="container__footer">
+                    <p class="container__name-two container__name-two_max">Камень, ножницы, бумага</p>
+                    <p class="container__text-two">Сыграй в популярную игру<br> против компьютера.</p>
+                    <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box-mobile">
+            <div class="container__block-mobile">
+                <div class="container__background-mobile-big">
+                    <img class="container__img-mobile" src="./style_mobile/mobile_img/container5.svg" alt="beckground5">
+                    <img class="container__img-sml-mobile" src="./style_mobile/mobile_img/container5.1.svg"
+                        alt="beckground5.1">
+                </div>
+                <div class="container__footer-mobile">
+                    <p class="container__name-mobile">Простая<br>викторина</p>
+                    <p class="container__text-mobile">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
+                    <button class="container__btn-mobile"><a class="container__link-mobile"
+                            href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box" id="game5">
+            <div class="container__block container__block_sml">
+                <div class="container__footer">
+                    <p class="container__name">Переверни текст</p>
+                    <p class="container__text">Попробуй ввести текст, который<br>будет перевернут.</p>
+                    <button class="container__btn"><a class="container__link" href="#">Играть!</a></button>
+                </div>
+                <div class="container__background container__background_five">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_5.svg" alt="background5">
+                    <img class="games__img-sml" src="./style_dekstop/dekstop_img/container5_1.svg" alt="background5_1">
+                </div>
+            </div>
+        </div>
+        <div class="container__box-mobile">
+            <div class="container__block-mobile">
+                <div class="container__background-mobile-big">
+                    <img class="container__img-mobile" src="./style_mobile/mobile_img/container6.svg" alt="beckground6">
+                </div>
+                <div class="container__footer-mobile">
+                    <p class="container__name-mobile">Генератор<br>случайных<br>цветов</p>
+                    <p class="container__text-mobile">Игра, в которой при клике<br>на кнопку фон страницы<br>меняется на случайный.</p>
+                    <button class="container__btn-mobile"><a class="container__link-mobile"
+                            href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="container__box" id="game6">
+            <div class="container__block-two container__block_sml">
+                <div class="container__background container__background_six">
+                    <img class="container__img" src="./style_dekstop/dekstop_img/container_6.svg" alt="background6">
+                </div>
+                <div class="container__footer">
+                    <p class="container__name-two container__name-two_max">Генератор случайных цветов</p>
+                    <p class="container__text-two">Игра, в которой при клике на кнопку<br> фон страницы меняется на
+                        случайный.</p>
+                    <button class="container__btn-two"><a class="container__link-two" href="#">Играть!</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <footer class="footer center">
         <p class="footer__text">Все права защищены.</p>
