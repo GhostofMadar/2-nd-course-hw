@@ -25,11 +25,17 @@ body {
   position: relative;
   overflow: hidden;
 }
+.header__stars-mobile {
+  display: none;
+}
 .header__star-big {
   position: absolute;
   overflow: hidden;
   top: -350px;
   right: -400px;
+}
+.header__main-mobile {
+  display: none;
 }
 .header__star-mobile {
   display: none;
@@ -459,26 +465,61 @@ body {
 }
 
 @media (max-width: 376px) {
+  body {
+    overflow-x: hidden;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
+    width: 100%;
+    max-width: 376px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   .header {
-    max-width: max;
-    background-image: url(./dekstop_img/header_img.jpeg);
+    width: 100%;
+    margin: 0 auto;
     position: relative;
+    background-color: rgb(225, 255, 143);
     overflow: hidden;
   }
-  .header__star-big {
+  .header__stars {
     display: none;
   }
-  .header__star-big-mobile {
+  .header__star2 {
     display: flex;
     position: absolute;
     overflow: hidden;
-    top: -100px;
+    left: 37px;
+    top: 94px;
   }
-  .header__title {
+  .header__star3 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    left: 91px;
+    top: 64px;
+  }
+  .header__star4 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    right: 34px;
+    bottom: 79px;
+  }
+  .header__star5 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    right: 86px;
+    bottom: 125px;
+  }
+  .header__main-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title-mobile {
     height: 196px;
     display: flex;
     flex-direction: row;
@@ -489,14 +530,32 @@ body {
     letter-spacing: 0px;
     text-align: center;
     padding-top: 147px;
+    padding-bottom: 24px;
   }
-  .header__text {
+  .header__text-mobile {
     color: rgb(32, 32, 39);
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+    padding-bottom: 36px;
+  }
+  .header__star-big {
+    display: none;
+  }
+  .header__star-mobile {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    left: 230px;
+    top: -110px;
+  }
+  .header__title {
+    display: none;
+  }
+  .header__text {
+    display: none;
   }
   .header__button {
     display: flex;
@@ -538,6 +597,12 @@ body {
   }
   .container__box-mobile {
     display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container__block-mobile {
+    width: 100%;
+    max-width: 341px;
   }
   .container__background-mobile {
     background-color: rgb(173, 97, 255);
@@ -581,6 +646,15 @@ body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    pointer-events: none;
+  }
+  .container__img-sml-mobile1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -65%);
     -o-object-fit: cover;
        object-fit: cover;
     pointer-events: none;

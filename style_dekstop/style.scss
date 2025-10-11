@@ -25,11 +25,17 @@
   background-image: url(./dekstop_img/header_img.jpeg);
   position: relative;
   overflow: hidden;
+  &__stars-mobile{
+    display: none;
+  }
   &__star-big{
     position: absolute;
     overflow: hidden;
     top: -350px;
     right: -400px;
+  }
+  &__main-mobile{
+    display: none;
   }
   &__star-mobile{
     display: none;
