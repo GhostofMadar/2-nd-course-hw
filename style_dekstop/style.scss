@@ -25,15 +25,22 @@
   background-image: url(./dekstop_img/header_img.jpeg);
   position: relative;
   overflow: hidden;
+  &__stars-mobile{
+    display: none;
+  }
   &__star-big{
     position: absolute;
     overflow: hidden;
     top: -350px;
     right: -400px;
   }
-  &__stars{
-
+  &__main-mobile{
+    display: none;
   }
+  &__star-mobile{
+    display: none;
+  }
+
   &__star2{
     position: absolute;
     overflow: hidden;
@@ -255,6 +262,7 @@
 .container{
   display: flex;
   flex-direction: column;
+  gap: 32px;
   &__title{
     color: rgb(255, 255, 255);
     font-size: 64px;
@@ -265,6 +273,9 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+  }
+  &__box-mobile{
+    display: none;
   }
   &__box{
     display: flex;
@@ -451,5 +462,7 @@
     line-height: 29px;
     text-align: center;
     padding-top: 60px;
-    }
+  }  
 }
+@import '../style_mobile/mobile'
+
