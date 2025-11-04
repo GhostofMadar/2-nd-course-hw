@@ -590,7 +590,7 @@ body {
     font-weight: 700;
     line-height: 49px;
     padding-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
   }
   .container__box {
     display: none;
@@ -607,7 +607,6 @@ body {
   .container__background-mobile {
     background-color: rgb(173, 97, 255);
     height: 285px;
-    width: 341px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border: 1px solid rgb(255, 255, 255);
@@ -617,7 +616,6 @@ body {
   .container__background-mobile-big {
     background-color: rgb(255, 255, 255);
     height: 285px;
-    width: 341px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border: 1px solid rgb(255, 255, 255);
@@ -660,7 +658,6 @@ body {
     pointer-events: none;
   }
   .container__footer-mobile {
-    width: 343px;
     display: flex;
     flex-direction: column;
     padding-top: 29px;
@@ -674,14 +671,14 @@ body {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 16px;
-    margin-left: 29px;
+    margin-left: 21px;
   }
   .container__text-mobile {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 32px;
-    margin-left: 29px;
+    margin-left: 21px;
   }
   .container__btn-mobile {
     box-sizing: border-box;
@@ -690,7 +687,7 @@ body {
     background: rgb(32, 32, 39);
     width: 285px;
     height: 55px;
-    margin-left: 29px;
+    margin-left: 21px;
   }
   .container__link-mobile {
     color: rgb(255, 255, 255);
